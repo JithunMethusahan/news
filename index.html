@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newshub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <div class="logo-text">News <span class="highlight">Hub</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Discover Breaking News</h1>
+      <p>Stay informed with the latest updates from around the world</p>
+    </section>
+
+    <!-- API Configuration Card -->
+    <div class="card">
+      <div class="card-content">
+        <div class="card-header">
+          <span style="color: #f59e0b;"></span>
+          <h3>News Configuration</h3>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">
+              <span style="color: #ef4444;"></span>
+              Category
+            </label>
+            <select id="category" class="form-select">
+              <option value="">All News</option>
+              <option value="business">Business</option>
+              <option value="technology">Technology</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="health">Health</option>
+              <option value="science">Science</option>
+              <option value="sports">Sports</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span style="color: #2563eb;"></span>
+              Language
+            </label>
+            <select id="language" class="form-select">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="it">Italian</option>
+              <option value="pt">Portuguese</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span style="color: #10b981;"></span>
+              Country
+            </label>
+            <select id="country" class="form-select">
+              <option value="us">United States</option>
+              <option value="gb">United Kingdom</option>
+              <option value="ca">Canada</option>
+              <option value="au">Australia</option>
+              <option value="de">Germany</option>
+              <option value="fr">France</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span style="color: #8b5cf6;"></span>
+              Results
+            </label>
+            <select id="pageSize" class="form-select">
+              <option value="20">20 articles</option>
+              <option value="50">50 articles</option>
+              <option value="100">100 articles</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="search-section">
+          <div class="search-input">
+            <input type="text" id="searchQuery" class="form-input" placeholder="Search for specific topics..." />
+          </div>
+          <button id="fetchBtn" class="btn btn-primary"> Get News </button>
+          <button id="searchBtn" class="btn btn-secondary"> Search </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="newsContainer">
+      <div class="welcome">
+        <div class="welcome-icon"></div>
+        <h3>Welcome to Newshub</h3>
+        <p>Click "Get News" above to get started!</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
